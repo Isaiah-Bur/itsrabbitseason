@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItsRabbitSeason.com</title>
+</head>
+<body>
+    <h1>Press any key to hear the sound!</h1>
+
+    <audio id="sound" src="raving-rabbids-made-with-Voicemod.mp3"></audio>
+
+    <script>
+        // Get the audio element
+        const sound = document.getElementById('sound');
+
+        // Play the sound when any key is pressed
+        document.addEventListener('keydown', () => {
+            sound.currentTime = 0; // Reset sound to start
+            sound.play();
+        });
+    </script>
+</body>
+</html>
